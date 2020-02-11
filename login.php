@@ -28,7 +28,7 @@ function getInputValue($name) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Reeceflix</title>
+        <title>Bienvenue sur Reeceflix</title>
         <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
     </head>
     <body>
@@ -39,8 +39,8 @@ function getInputValue($name) {
 
                 <div class="header">
                     <img src="assets/images/logo.png" title="Logo" alt="Site logo" />
-                    <h3>Sign In</h3>
-                    <span>to continue to Reeceflix</span>
+                    <h3>Connectez-vous</h3>
+                    <span>Pour continuer regarder nos films</span>
                 </div>
 
                 <form method="POST">
@@ -53,7 +53,7 @@ function getInputValue($name) {
 
                 </form>
 
-                <a href="register.php" class="signInMessage">Need an account? Sign up here!</a>
+                <a href="register.php" class="signInMessage">Avez-vous besoin d'un compte ? Inscrivez-vous iciNeed an account? Sign up here!</a>
 
             </div>
 

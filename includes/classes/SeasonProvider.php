@@ -9,12 +9,15 @@ class SeasonProvider {
 
     public function create($entity) {
         $seasons = $entity->getSeasons();
-
+        
+        // conditions pour traiter les données au cas ou si la video il fait pas partie d'une série
         if(sizeof($seasons) == 0) {
             return;
         }
 
         $seasonsHtml = "";
+
+        // recuperer le nombre des episodes de chaque série
         foreach($seasons as $season) {
             $seasonNumber = $season->getSeasonNumber();
 
@@ -35,6 +38,7 @@ class SeasonProvider {
         return $seasonsHtml;
     }
 
+    //  crée une fonction pour afficheer les videos et cette fonction prend un paramettre $video
     private function createVideoSquare($video) {
         $id = $video->getId();
         $thumbnail = $video->getThumbnail();

@@ -2,6 +2,7 @@
 $hideNav = true;
 require_once("includes/header.php");
 
+// recuperer l'ID d'article et afficher le sur la page
 if(!isset($_GET["id"])) {
     ErrorMessage::show("No ID passed into page");
 }

@@ -7,9 +7,9 @@
 </div>
 
 <ul class="navLinks">
-    <li><a href="index.php">Home</a></li>
-    <li><a href="shows.php">TV Shows</a></li>
-    <li><a href="movies.php">Movies</a></li>
+    <li><a href="index.php">Accueil</a></li>
+    <li><a href="shows.php">Séries</a></li>
+    <li><a href="movies.php">Films</a></li>
 </ul>
 
 <div class="rightItems">

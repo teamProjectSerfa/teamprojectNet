@@ -1,5 +1,7 @@
 <?php
 class EntityProvider {
+    // Les fonctions statiques sont des fonctions que vous pouvez appeler
+    //  sans avoir à créer une instance de cette classe
 
     public static function getEntities($con, $categoryId, $limit) {
 

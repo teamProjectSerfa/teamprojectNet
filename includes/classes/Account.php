@@ -42,7 +42,7 @@ class Account {
     }
 
     public function login($un, $pw) {
-        $pw = hash("sha512", $pw);
+        $pw = hash("sha512", $pw);//pour chiffrer le mot de passe
 
         $query = $this->con->prepare("SELECT * FROM users WHERE username=:un AND password=:pw");
         $query->bindValue(":un", $un);
@@ -69,6 +69,11 @@ class Account {
         $query->bindValue(":un", $un);
         $query->bindValue(":em", $em);
         $query->bindValue(":pw", $pw);
+        
+        // pour debuger la requete et tester si ça marche 
+        // $query->execute();
+        // var_dump($query->errorInfo());
+        // return false;
 
         return $query->execute();
     }

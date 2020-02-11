@@ -51,6 +51,8 @@ class Video {
         return $this->sqlData["entityId"];
     }
 
+    // fonction pour incrementer les episode des saison a chaque fois en regarde 
+    // une episode automatiqument passe a l'episode precedente
     public function incrementViews() {
         $query = $this->con->prepare("UPDATE videos SET views=views+1 WHERE id=:id");
         $query->bindValue(":id", $this->getId());

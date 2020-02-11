@@ -18,7 +18,7 @@ if(isset($_POST["saveDetailsButton"])) {
 
     if($account->updateDetails($firstName, $lastName, $email, $userLoggedIn)) {
         $detailsMessage = "<div class='alertSuccess'>
-                                Details updated successfully!
+                                Informations modifié avec succès !
                             </div>";
     }
     else {
@@ -39,7 +39,7 @@ if(isset($_POST["savePasswordButton"])) {
 
     if($account->updatePassword($oldPassword, $newPassword, $newPassword2, $userLoggedIn)) {
         $passwordMessage = "<div class='alertSuccess'>
-                                Password updated successfully!
+                                Mot de passe modifié avec succès !
                             </div>";
     }
     else {
@@ -57,7 +57,7 @@ if(isset($_POST["savePasswordButton"])) {
 
         <form method="POST">
 
-            <h2>User details</h2>
+            <h2>Informations d'utilisateur</h2>
             
             <?php
 
@@ -66,15 +66,15 @@ if(isset($_POST["savePasswordButton"])) {
             $email = isset($_POST["email"]) ? $_POST["email"] : $user->getEmail();
             ?>
 
-            <input type="text" name="firstName" placeholder="First name" value="<?php echo $firstName; ?>">
-            <input type="text" name="lastName" placeholder="Last name" value="<?php echo $lastName; ?>">
-            <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
+            <input type="text" name="firstName" placeholder="Saisir Votre nom" value="<?php echo $firstName; ?>">
+            <input type="text" name="lastName" placeholder="Saisir Votre prénom" value="<?php echo $lastName; ?>">
+            <input type="email" name="email" placeholder="Saisir Votre email" value="<?php echo $email; ?>">
 
             <div class="message">
                 <?php echo $detailsMessage; ?>
             </div>
             
-            <input type="submit" name="saveDetailsButton" value="Save">
+            <input type="submit" name="saveDetailsButton" value="Valider">
 
 
         </form>
@@ -85,17 +85,17 @@ if(isset($_POST["savePasswordButton"])) {
 
         <form method="POST">
 
-            <h2>Update password</h2>
+            <h2>Modifier votre mot de passe</h2>
 
-            <input type="password" name="oldPassword" placeholder="Old password">
-            <input type="password" name="newPassword" placeholder="New password">
-            <input type="password" name="newPassword2" placeholder="Confirm new password">
+            <input type="password" name="oldPassword" placeholder="Mot de passe actuel">
+            <input type="password" name="newPassword" placeholder="Entrer votre nouveau mot de passe">
+            <input type="password" name="newPassword2" placeholder="Confirmer votre nouveau mot de passe">
 
             <div class="message">
                 <?php echo $passwordMessage; ?>
             </div>
 
-            <input type="submit" name="savePasswordButton" value="Save">
+            <input type="submit" name="savePasswordButton" value="Enregistrer">
 
 
         </form>

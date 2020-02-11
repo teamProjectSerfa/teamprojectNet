@@ -20,10 +20,12 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Reeceflix</title>
+        <title>Bienvenue sur Reeceflix</title>
         <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
 
+        <!-- scripts pour le Jquery  -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- scripts pris de site "font awesome pour les icones" -->
         <script src="https://kit.fontawesome.com/06a651c8da.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
     </head>

@@ -24,6 +24,7 @@ require_once("includes/classes/Account.php");
         }
     }
 
+// pour garder les bonne valeur dans les champs input
 function getInputValue($name) {
     if(isset($_POST[$name])) {
         echo $_POST[$name];
@@ -33,7 +34,7 @@ function getInputValue($name) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Reeceflix</title>
+        <title>Bienvenue sur Reeceflix</title>
         <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
     </head>
     <body>
@@ -44,8 +45,8 @@ function getInputValue($name) {
 
                 <div class="header">
                     <img src="assets/images/logo.png" title="Logo" alt="Site logo" />
-                    <h3>Sign Up</h3>
-                    <span>to continue to Reeceflix</span>
+                    <h3>Inscrivez-vous</h3>
+                    <span>Pour continuer regarder nos films sur Reeceflix</span>
                 </div>
 
                 <form method="POST">
@@ -77,7 +78,7 @@ function getInputValue($name) {
 
                 </form>
 
-                <a href="login.php" class="signInMessage">Already have an account? Sign in here!</a>
+                <a href="login.php" class="signInMessage">Vous-êtes déjà inscris ? Connectez-vous ici</a>
 
             </div>
 
